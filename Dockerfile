@@ -16,3 +16,5 @@ RUN echo "gem: --no-document" > ~/.gemrc && \
 FROM ${FLUENTD_REPOSITORY}:${FLUENTD_TAG}
 
 COPY --chmod=775 --from=builder /opt/bitnami/fluentd/gems /opt/bitnami/fluentd/gems
+COPY --chmod=775 --from=builder /opt/bitnami/fluentd/extensions /opt/bitnami/fluentd/extensions
+COPY --chmod=775 --from=builder /opt/bitnami/fluentd/specifications /opt/bitnami/fluentd/specifications
