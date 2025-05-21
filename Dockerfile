@@ -1,5 +1,5 @@
 ARG FLUENTD_REPOSITORY=docker.io/bitnami/fluentd
-ARG FLUENTD_TAG=1.18.0-debian-12-r11
+ARG FLUENTD_TAG=1.18.0-debian-12-r12
 
 FROM ${FLUENTD_REPOSITORY}:${FLUENTD_TAG} AS builder
 
